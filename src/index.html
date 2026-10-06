@@ -7,54 +7,73 @@
     <title>Guia de Segurança Digital</title>
     <link rel="stylesheet" href="./output.css" />
     <script src="./script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
-        <h1>Guia de Segurança Digital</h1>
-        <p>Aprenda práticas simples para proteger suas contas, dispositivos e informações na internet.</p>
+<body class="bg-slate-100 text-slate-800 leading-relaxed">
+    <header class="bg-slate-900 text-white px-6 py-10 text-center">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Guia de Segurança Digital</h1>
+            <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto">Aprenda práticas simples para proteger suas
+                contas, dispositivos e informações na internet.</p>
+        </div>
     </header>
-    <nav>
-        <a href="#boas-praticas">Boas Práticas</a>
-        <a href="#teste">Teste de Segurança</a>
-        <a href="#dicas">Dicas</a>
-        <a href="#contatos">Contatos</a>
+    <nav class="bg-white border-b border-slate-200 shadow-sm px-6 py-4">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row flex-wrap justify-center gap-3">
+            <a href="#boas-praticas"
+                class="px-4 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition">Boas
+                Práticas</a>
+            <a href="#teste"
+                class="px-4 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition">Teste
+                de Segurança</a>
+            <a href="#dicas"
+                class="px-4 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition">Dicas</a>
+            <a href="#contatos"
+                class="px-4 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition">Contatos</a>
+        </div>
     </nav>
-    <main>
-        <section id="boas-praticas">
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <section id="boas-praticas" class="mb-12">
+
             <h2>Boas práticas de segurança</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Proteção de contas</h3>
+                    <p class="text-slate-600">Use senhas fortes e ative a autenticação em dois fatores.</p>
+                </article>
 
-            <article>
-                <h3>Proteção de contas</h3>
-                <p>Use senhas fortes e ative a autenticação em dois fatores.</p>
-            </article>
+                <article class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Navegação segura</h3>
+                    <p class="text-slate-600">Verifique links e sites antes de fornecer qualquer informação.</p>
+                </article>
 
-            <article>
-                <h3>Navegação segura</h3>
-                <p>Verifique links e sites antes de fornecer qualquer informação.</p>
-            </article>
-
-            <article>
-                <h3>Proteção dos dispositivos</h3>
-                <p>Mantenha seus dispositivos atualizados e faça backups.</p>
-            </article>
+                <article class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Proteção dos dispositivos</h3>
+                    <p class="text-slate-600">Mantenha seus dispositivos atualizados e faça backups.</p>
+                </article>
+            </div>
         </section>
 
-        <section id="teste">
-            <h2>Escala de segurança</h2>
-            <p> Cada boa prática recebe uma pontuação de 0 a 10. Quanto maior a pontuação, melhor é o nível de
+        <section id="teste" class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 mb-12 shadow-sm">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">Escala de segurança</h2>
+            <p class="text-slate-600 mb-6"> Cada boa prática recebe uma pontuação de 0 a 10. Quanto maior a pontuação,
+                melhor é o nível de
                 proteção.
             </p>
-            <ul>
-                <li><strong>0 a 3:</strong> nível básico.</li>
-                <li><strong>4 a 6:</strong> nível intermediário.</li>
-                <li><strong>7 a 10:</strong> nível seguro.</li>
+            <ul class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <li class="border border-slate-200 rounded-lg p-4 bg-slate-50"><strong class="text-slate-900">0 a
+                        3:</strong> nível básico.</li>
+                <li class="border border-slate-200 rounded-lg p-4 bg-slate-50"><strong class="text-slate-900">4 a
+                        6:</strong> nível intermediário.</li>
+                <li class="border border-slate-200 rounded-lg p-4 bg-slate-50"><strong class="text-slate-900">7 a
+                        10:</strong> nível seguro.</li>
             </ul>
-            <p> Nesta avaliação são utilizadas seis pontuações fictícias apenas para demonstrar o funcionamento do
+            <p class="mt-6 text-sm text-slate-500"> Nesta avaliação são utilizadas seis pontuações fictícias apenas para
+                demonstrar o funcionamento do
                 sistema. </p>
         </section>
 
-        <section id="avaliacao">
+        <section id="avaliacao" class="mb-12">
             <h2>Resultado da avaliação</h2>
             <div class="resultado">
                 <h3>Pontuações das práticas</h3>
@@ -99,7 +118,7 @@
     <footer id="contatos">
         <p>Guia de Segurança Digital — Projeto educativo</p>
         <p>Conteúdo desenvolvido para fins educacionais.</p>
-        <p>email para contatos: segurançadigital@gmail.com</p>
+        <p>email para contatos: segurancadigital@gmail.com</p>
         <p>numero do whasapp: 84 94530-2910.</p>
     </footer>
 </body>
