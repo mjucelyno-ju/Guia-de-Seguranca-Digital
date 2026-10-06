@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-slate-100 text-slate-800 leading-relaxed">
-    <header class="bg-slate-900 text-white px-6 py-10 text-center">
+    <header id="topo" class="bg-slate-900 text-white px-6 py-10 text-center">
         <div class="max-w-6xl mx-auto">
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Guia de Segurança Digital</h1>
             <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto">Aprenda práticas simples para proteger suas
@@ -74,8 +74,8 @@
         </section>
 
         <section id="avaliacao" class="mb-12">
-            <h2>Resultado da avaliação</h2>
-            <div class="resultado">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">Resultado da avaliação</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <h3>Pontuações das práticas</h3>
                 <p> Proteção de contas: <strong id="pontos-contas">8</strong> </p>
                 <p> Navegação segura: <strong id="pontos-navegacao">7</strong> </p>
@@ -89,37 +89,43 @@
                 <p> <strong>Práticas em nível seguro:</strong> <strong id="seguras">0</strong> </p>
                 <p> <strong>Classificação:</strong> <strong id="classificacao">-</strong> </p>
             </div>
-            <figure>
-                <img src="imagens/computador.jpg" alt="Ilustração de um computador protegido por um cadeado digital">
-                <figcaption>computador protegido.</figcaption>
+            <figure class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex flex-col justify-center">
+                <img src="imagens/computador.jpg" alt="Ilustração de um computador protegido por um cadeado digital"
+                    class="w-full rounded-lg">
+                <figcaption class="text-center text-sm text-slate-500 mt-3">computador protegido.</figcaption>
             </figure>
         </section>
 
-        <section id="dicas">
-            <h3>Dicas finais</h3>
+        <section id="dicas" class="mb-12">
+            <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">Dicas finais</h3>
+            <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                <ul class="space-y-3 text-slate-600">
+                    <li>Não compartilhe suas senhas.</li>
+                    <li>Desconfie de mensagens inesperadas.</li>
+                    <li>Mantenha seus aplicativos atualizados.</li>
+                    <li>Faça backups regularmente.</li>
+                    <li>Ative a autenticação em dois fatores.</li>
 
-            <ul>
-                <li>Não compartilhe suas senhas.</li>
-                <li>Desconfie de mensagens inesperadas.</li>
-                <li>Mantenha seus aplicativos atualizados.</li>
-                <li>Faça backups regularmente.</li>
-                <li>Ative a autenticação em dois fatores.</li>
-            </ul>
+                </ul>
+            </div>
         </section>
-        <aside>
-            <h3>Atenção</h3>
-            <p>mais uma dica essecial:</p>
-            <p>
+        <aside class=" text-center bg-amber-50 border border-amber-300 rounded-xl p-6 mb-12 shadow-sm">
+            <h3 class="text-xl font-bold text-amber-900 mb-3">Atenção</h3>
+            <p class="text-amber-800 mb-2">mais uma dica essecial:</p>
+            <p class="text-amber-800">
                 Bancos e serviços confiáveis normalmente não solicitam
                 sua senha completa por mensagens ou e-mails.
             </p>
         </aside>
     </main>
-    <footer id="contatos">
-        <p>Guia de Segurança Digital — Projeto educativo</p>
-        <p>Conteúdo desenvolvido para fins educacionais.</p>
-        <p>email para contatos: segurancadigital@gmail.com</p>
-        <p>numero do whasapp: 84 94530-2910.</p>
+    <footer id="contatos" class="bg-slate-900 text-slate-300 px-6 py-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="font-semibold text-white mb-2">Guia de Segurança Digital — Projeto educativo</p>
+            <p class="text-sm mb-2">Conteúdo desenvolvido para fins educacionais.</p>
+            <p class="text-sm">email para contatos: segurancadigital@gmail.com</p>
+            <p class="text-sm mt-1">numero do whasapp: 84 94530-2910.</p>
+            <a href="#topo" class="text-blue-400 hover:text-blue-300">voltar ao topo</a>
+        </div>
     </footer>
 </body>
 
