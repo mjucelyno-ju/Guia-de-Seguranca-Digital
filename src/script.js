@@ -121,3 +121,36 @@ function realizarAvaliacao() {
 document.getElementById("btn-calcular")
     .addEventListener("click", realizarAvaliacao);
 
+document.getElementById("btn-calcular").addEventListener("click", function () {
+
+    const notas = [
+        Number(document.getElementById("input-contas").value),
+        Number(document.getElementById("input-navegacao").value),
+        Number(document.getElementById("input-dispositivos").value),
+        Number(document.getElementById("input-mensagens").value),
+        Number(document.getElementById("input-backup").value),
+        Number(document.getElementById("input-privacidade").value)
+    ];
+
+    const total = notas.reduce((soma, nota) => soma + nota, 0);
+
+    const media = total / notas.length;
+
+    const seguros = notas.filter(nota => nota >= 7).length;
+
+    let classificacao;
+
+    if (media >= 7) {
+        classificacao = "Proteção forte";
+    } else if (media >= 4) {
+        classificacao = "Proteção intermediária";
+    } else {
+        classificacao = "Proteção básica";
+    }
+
+    document.getElementById("total").textContent = total;
+    document.getElementById("media").textContent = media.toFixed(1);
+    document.getElementById("seguros").textContent = seguros;
+    document.getElementById("classificacao").textContent = classificacao;
+});
+
