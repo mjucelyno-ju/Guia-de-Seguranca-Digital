@@ -74,27 +74,59 @@
         </section>
 
         <section id="avaliacao" class="mb-12">
-            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">Resultado da avaliação</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <h3 class="text-xl font-bold text-slate-900 mb-5">Pontuações das práticas</h3>
-                <p> Proteção de contas: <strong id="pontos-contas">8</strong> </p>
-                <p class="bg-slate-50 rounded-lg p-3"> Navegação segura: <strong id="pontos-navegacao">7</strong> </p>
-                <p class="bg-slate-50 rounded-lg p-3"> Proteção dos dispositivos: <strong
-                        id="pontos-dispositivos">9</strong> </p>
-                <p> Cuidados com mensagens: <strong id="pontos-mensagens">6</strong> </p>
-                <p> Backup: <strong id="pontos-backup">8</strong> </p>
-                <p> Privacidade: <strong id="pontos-privacidade">7</strong> </p>
-
-                <p> <strong>Total de pontos:</strong> <strong id="total">0</strong> </p>
-                <p> <strong>Média:</strong> <strong id="media">0</strong> </p>
-                <p> <strong>Práticas em nível seguro:</strong> <strong id="seguras">0</strong> </p>
-                <p> <strong>Classificação:</strong> <strong id="classificacao">-</strong> </p>
-            </div>
-            <figure class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex flex-col justify-center">
-                <img src="imagens/computador.jpg" alt="Ilustração de um computador protegido por um cadeado digital"
-                    class="w-full rounded-lg">
-                <figcaption class="text-center text-sm text-slate-500 mt-3">computador protegido.</figcaption>
-            </figure>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6"> Teste de Segurança </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6"> 
+                <div class="resultado bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-5"> Pontuações das práticas </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                        <p class="bg-slate-50 rounded-lg p-3"> Proteção de contas: <strong id="pontos-contas">8</strong>
+                        </p>
+                        <p class="bg-slate-50 rounded-lg p-3"> Navegação segura: <strong
+                                id="pontos-navegacao">7</strong> </p>
+                        <p class="bg-slate-50 rounded-lg p-3"> Proteção dos dispositivos: <strong
+                                id="pontos-dispositivos">9</strong> </p>
+                        <p class="bg-slate-50 rounded-lg p-3"> Cuidados com mensagens: <strong
+                                id="pontos-mensagens">6</strong> </p>
+                        <p class="bg-slate-50 rounded-lg p-3"> Backup: <strong id="pontos-backup">8</strong> </p>
+                        <p class="bg-slate-50 rounded-lg p-3"> Privacidade: <strong id="pontos-privacidade">7</strong>
+                        </p>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
+                        <h3 class="text-xl font-bold text-slate-900 mb-5"> Digite suas pontuações </h3>
+                        <p class="text-slate-600 mb-6"> Digite uma nota de 0 a 10 para cada prática de segurança. </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4"> <label class="font-semibold"> Proteção de
+                                contas <input id="input-contas" type="number" min="0" max="10" value="8"
+                                    class="w-full mt-2 border border-slate-300 rounded-lg p-3"
+                                    placeholder="Digite de 0 a 10"> </label> <label class="font-semibold"> Navegação
+                                segura <input id="input-navegacao" type="number" min="0" max="10" value="7"
+                                    class="w-full mt-2 border border-slate-300 rounded-lg p-3"
+                                    placeholder="Digite de 0 a 10"> </label> <label class="font-semibold"> Proteção dos
+                                dispositivos <input id="input-dispositivos" type="number" min="0" max="10" value="9"
+                                    class="w-full mt-2 border border-slate-300 rounded-lg p-3"
+                                    placeholder="Digite de 0 a 10"> </label> <label class="font-semibold"> Cuidados com
+                                mensagens <input id="input-mensagens" type="number" min="0" max="10" value="6"
+                                    class="w-full mt-2 border border-slate-300 rounded-lg p-3"
+                                    placeholder="Digite de 0 a 10"> </label> <label class="font-semibold"> Backup <input
+                                    id="input-backup" type="number" min="0" max="10" value="8"
+                                    class="w-full mt-2 border border-slate-300 rounded-lg p-3"
+                                    placeholder="Digite de 0 a 10"> </label> <label class="font-semibold"> Privacidade
+                                <input id="input-privacidade" type="number" min="0" max="10" value="7"
+                                    class="w-full mt-2 border border-slate-300 rounded-lg p-3"
+                                    placeholder="Digite de 0 a 10"> </label> </div> <button id="btn-calcular"
+                            type="button"
+                            class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition">
+                            Calcular avaliação </button>
+                    </div>
+                    <figure
+                        class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex flex-col justify-center">
+                        <img src="imagens/computador.jpg"
+                            alt="Ilustração de um computador protegido por um cadeado digital"
+                            class="w-full rounded-lg">
+                        <figcaption class="text-center text-sm text-slate-500 mt-3"> Computador protegido por recursos
+                            de
+                            segurança digital. </figcaption>
+                    </figure>
+                </div>
         </section>
 
         <section id="dicas" class="mb-12">
