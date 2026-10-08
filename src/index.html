@@ -35,7 +35,7 @@
     <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <section id="boas-praticas" class="mb-12">
 
-            <h2>Boas práticas de segurança</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">Boas práticas de segurança</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <article class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Proteção de contas</h3>
@@ -80,7 +80,7 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-                <!-- TESTE -->
+
                 <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
 
                     <h3 class="text-xl font-bold text-slate-900 mb-5">
@@ -92,49 +92,46 @@
                         <label class="font-semibold">
                             Proteção de contas
                             <input id="input-contas" type="number" min="0" max="10" value="8"
-                                class="w-full mt-2 border border-slate-300 rounded-lg p-3">
+                                class=" focus:ring w-full mt-2 border border-slate-300 rounded-lg p-3">
                         </label>
 
                         <label class="font-semibold">
                             Navegação segura
                             <input id="input-navegacao" type="number" min="0" max="10" value="7"
-                                class="w-full mt-2 border border-slate-300 rounded-lg p-3">
+                                class=" focus:ring w-full mt-2 border border-slate-300 rounded-lg p-3">
                         </label>
 
                         <label class="font-semibold">
                             Proteção dos dispositivos
                             <input id="input-dispositivos" type="number" min="0" max="10" value="9"
-                                class="w-full mt-2 border border-slate-300 rounded-lg p-3">
+                                class=" focus:ring w-full mt-2 border border-slate-300 rounded-lg p-3">
                         </label>
 
                         <label class="font-semibold">
                             Cuidados com mensagens
                             <input id="input-mensagens" type="number" min="0" max="10" value="6"
-                                class="w-full mt-2 border border-slate-300 rounded-lg p-3">
+                                class=" focus:ring w-full mt-2 border border-slate-300 rounded-lg p-3">
                         </label>
 
                         <label class="font-semibold">
                             Backup
                             <input id="input-backup" type="number" min="0" max="10" value="8"
-                                class="w-full mt-2 border border-slate-300 rounded-lg p-3">
+                                class=" focus:ring w-full mt-2 border border-slate-300 rounded-lg p-3">
                         </label>
 
                         <label class="font-semibold">
                             Privacidade
                             <input id="input-privacidade" type="number" min="0" max="10" value="7"
-                                class="w-full mt-2 border border-slate-300 rounded-lg p-3">
+                                class=" focus:ring w-full mt-2 border border-slate-300 rounded-lg p-3">
                         </label>
 
                     </div>
 
                     <button id="btn-calcular" type="button"
-                        class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg">
+                        class=" focus:ring mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg">
                         Calcular avaliação
                     </button>
                 </div>
-
-
-                <!-- RESULTADO -->
                 <div id="resultado" class="bg-slate-900 text-white rounded-xl p-6 shadow-sm">
 
                     <h3 class="text-2xl font-bold mb-6">
@@ -171,18 +168,17 @@
                 </div>
 
             </div>
-        </section>
-
-
-        <section id="dicas" class="mb-12">
             <figure class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex flex-col justify-center">
                 <img src="imagens/computador.jpg" alt="Ilustração de um computador protegido por um cadeado digital"
-                    class="w-200 rounded-lg">
+                    class="w-full max-w-sm mx-auto rounded-lg">
                 <figcaption class="text-center text-sm text-slate-500 mt-3"> Computador protegido por recursos
                     de
                     segurança digital. </figcaption>
             </figure>
-            <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">Dicas finais</h3>
+        </section>
+        <section id="dicas" class="mb-12">
+
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">Dicas finais</h2>
             <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
                 <ul class="space-y-3 text-slate-600">
                     <li>Não compartilhe suas senhas.</li>
@@ -196,7 +192,7 @@
         </section>
         <aside class=" text-center bg-amber-50 border border-amber-300 rounded-xl p-6 mb-12 shadow-sm">
             <h3 class="text-xl font-bold text-amber-900 mb-3">Atenção</h3>
-            <p class="text-amber-800 mb-2">mais uma dica essecial:</p>
+            <p class="text-amber-800 mb-2">Mais uma dica essencial:</p>
             <p class="text-amber-800">
                 Bancos e serviços confiáveis normalmente não solicitam
                 sua senha completa por mensagens ou e-mails.
@@ -208,7 +204,6 @@
             <p class="font-semibold text-white mb-2">Guia de Segurança Digital — Projeto educativo</p>
             <p class="text-sm mb-2">Conteúdo desenvolvido para fins educacionais.</p>
             <p class="text-sm">email para contatos: segurancadigital@gmail.com</p>
-            <p class="text-sm mt-1">numero do whasapp: 84 94530-2910.</p>
             <a href="#topo" class="text-blue-400 hover:text-blue-300">voltar ao topo</a>
         </div>
     </footer>
