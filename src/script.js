@@ -1,6 +1,5 @@
 const nomeProjeto = "Guia de Segurança Digital";
 const notaMaxima = 10;
-const avaliacaoAtiva = true;
 
 // Calcula o total das pontuações:
 function calcularTotal(pontuacoes) {
@@ -32,10 +31,11 @@ function contarPraticasSeguras(pontuacoes) {
 }
 
 // Classifica o resultado:
+
 function classificarResultado(media) {
-    if (media >= 8) {
+    if (media >= 7) {
         return "Proteção forte";
-    } else if (media >= 5) {
+    } else if (media >= 4) {
         return "Proteção intermediária";
     } else {
         return "Proteção básica";
