@@ -91,37 +91,37 @@
 
                         <label class="font-semibold">
                             Proteção de contas
-                            <input id="input-contas" type="number" min="0" max="10" value="8"
+                            <input id="input-contas" type="number" min="0" max="10" value="8" required
                                 class=" focus:ring w-full mt-2 border border-slate-300 rounded-lg p-3">
                         </label>
 
                         <label class="font-semibold">
                             Navegação segura
-                            <input id="input-navegacao" type="number" min="0" max="10" value="7"
+                            <input id="input-navegacao" type="number" min="0" max="10" value="7" required
                                 class=" focus:ring w-full mt-2 border border-slate-300 rounded-lg p-3">
                         </label>
 
                         <label class="font-semibold">
                             Proteção dos dispositivos
-                            <input id="input-dispositivos" type="number" min="0" max="10" value="9"
+                            <input id="input-dispositivos" type="number" min="0" max="10" value="9" required
                                 class=" focus:ring w-full mt-2 border border-slate-300 rounded-lg p-3">
                         </label>
 
                         <label class="font-semibold">
                             Cuidados com mensagens
-                            <input id="input-mensagens" type="number" min="0" max="10" value="6"
+                            <input id="input-mensagens" type="number" min="0" max="10" value="6" required
                                 class=" focus:ring w-full mt-2 border border-slate-300 rounded-lg p-3">
                         </label>
 
                         <label class="font-semibold">
                             Backup
-                            <input id="input-backup" type="number" min="0" max="10" value="8"
+                            <input id="input-backup" type="number" min="0" max="10" value="8" required
                                 class=" focus:ring w-full mt-2 border border-slate-300 rounded-lg p-3">
                         </label>
 
                         <label class="font-semibold">
                             Privacidade
-                            <input id="input-privacidade" type="number" min="0" max="10" value="7"
+                            <input id="input-privacidade" type="number" min="0" max="10" value="7" required 
                                 class=" focus:ring w-full mt-2 border border-slate-300 rounded-lg p-3">
                         </label>
 
@@ -168,29 +168,36 @@
                 </div>
 
             </div>
-            <figure class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex flex-col justify-center">
-                <img src="imagens/computador.jpg" alt="Ilustração de um computador protegido por um cadeado digital"
-                    class="w-full max-w-sm mx-auto rounded-lg">
-                <figcaption class="text-center text-sm text-slate-500 mt-3"> Computador protegido por recursos
-                    de
-                    segurança digital. </figcaption>
-            </figure>
+            <div class="mt-5">
+                <figure class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex flex-col justify-center">
+                    <img src="imagens/computador.jpg" alt="Ilustração de um computador protegido por um cadeado digital"
+                        class="w-full max-w-sm mx-auto rounded-lg">
+                    <figcaption class="text-center text-sm text-slate-500 mt-3"> Computador protegido por recursos
+                        de
+                        segurança digital. </figcaption>
+                </figure>
+            </div>
         </section>
         <section id="dicas" class="mb-12">
-
             <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">Dicas finais</h2>
-            <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+            <div class="flex flex-col md:flex-row  items-center gap-6 text-lg bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
                 <ul class="space-y-3 text-slate-600">
                     <li>Não compartilhe suas senhas.</li>
                     <li>Desconfie de mensagens inesperadas.</li>
                     <li>Mantenha seus aplicativos atualizados.</li>
                     <li>Faça backups regularmente.</li>
                     <li>Ative a autenticação em dois fatores.</li>
-
                 </ul>
+                    <figure class="w-full md:w-1/2 md:ml-auto flex-shrink-0">
+                        <img src="imagens/cadeadodigital.jpg" alt="Cadeado digital representando a segurança online"
+                            class="w-full max-w-xs mx-auto rounded-lg">
+                        <figcaption class="text-center text-sm text-slate-500 mt-3">
+                            Segurança e proteção digital.
+                        </figcaption>
+                    </figure>
             </div>
         </section>
-        <aside class=" text-center bg-amber-50 border border-amber-300 rounded-xl p-6 mb-12 shadow-sm">
+        <aside class="text-center bg-amber-50 border border-amber-300 rounded-xl p-6 mb-12 shadow-sm">
             <h3 class="text-xl font-bold text-amber-900 mb-3">Atenção</h3>
             <p class="text-amber-800 mb-2">Mais uma dica essencial:</p>
             <p class="text-amber-800">

@@ -2,7 +2,7 @@ const nomeProjeto = "Guia de Segurança Digital";
 const notaMaxima = 10;
 const avaliacaoAtiva = true;
 
-// Calcula o total das pontuações
+// Calcula o total das pontuações:
 function calcularTotal(pontuacoes) {
     let total = 0;
 
@@ -13,12 +13,12 @@ function calcularTotal(pontuacoes) {
     return total;
 }
 
-// Calcula a média
+// Calcula a média:
 function calcularMedia(total, quantidade) {
     return total / quantidade;
 }
 
-// Conta as práticas que chegaram ao nível seguro
+// Conta as práticas que chegaram ao nível seguro:
 function contarPraticasSeguras(pontuacoes) {
     let quantidadeSeguras = 0;
 
@@ -31,7 +31,7 @@ function contarPraticasSeguras(pontuacoes) {
     return quantidadeSeguras;
 }
 
-// Classifica o resultado
+// Classifica o resultado:
 function classificarResultado(media) {
     if (media >= 8) {
         return "Proteção forte";
@@ -42,7 +42,7 @@ function classificarResultado(media) {
     }
 }
 
-// Pega os valores digitados pelo usuário
+// Pega os valores digitados pelo usuário:
 function obterPontuacoes() {
     const pontuacoes = [
         Number(document.getElementById("input-contas").value),
@@ -56,12 +56,12 @@ function obterPontuacoes() {
     return pontuacoes;
 }
 
-// Realiza toda a avaliação
+// Realiza toda a avaliação:
 function realizarAvaliacao() {
 
     const pontuacoes = obterPontuacoes();
 
-    // Verifica se todas as notas estão entre 0 e 10
+    // Verifica se todas as notas estão entre 0 e 10:
     for (const pontuacao of pontuacoes) {
 
         if (
@@ -107,6 +107,6 @@ function realizarAvaliacao() {
         classificacao;
 }
 
-// Botão para calcular
+// Botão para calcular:
 document.getElementById("btn-calcular")
     .addEventListener("click", realizarAvaliacao);
