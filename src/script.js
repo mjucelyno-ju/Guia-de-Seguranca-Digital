@@ -77,15 +77,17 @@ function realizarAvaliacao() {
 
     const pontuacoes = obterPontuacoes();
 
-    // Verifica se todas as notas estão entre 0 e 10:
-    for (const pontuacao of pontuacoes) {
+    if (pontuacoes === null) {
+        return;
+    }
 
+    for (const pontuacao of pontuacoes) {
         if (
+            !Number.isInteger(pontuacao) ||
             pontuacao < 0 ||
-            pontuacao > notaMaxima ||
-            Number.isNaN(pontuacao)
+            pontuacao > notaMaxima
         ) {
-            alert("Digite todas as pontuações entre 0 e 10.");
+            alert("Digite notas inteiras de 0 a 10.");
             return;
         }
     }
