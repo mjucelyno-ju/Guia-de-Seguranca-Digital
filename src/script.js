@@ -44,14 +44,30 @@ function classificarResultado(media) {
 
 // Pega os valores digitados pelo usuário:
 function obterPontuacoes() {
-    const pontuacoes = [
-        Number(document.getElementById("input-contas").value),
-        Number(document.getElementById("input-navegacao").value),
-        Number(document.getElementById("input-dispositivos").value),
-        Number(document.getElementById("input-mensagens").value),
-        Number(document.getElementById("input-backup").value),
-        Number(document.getElementById("input-privacidade").value)
+    const ids = [
+        "input-contas",
+        "input-navegacao",
+        "input-dispositivos",
+        "input-mensagens",
+        "input-backup",
+        "input-privacidade"
     ];
+
+    // Verifica se algum campo está vazio
+    for (const id of ids) {
+        const campo = document.getElementById(id);
+
+        if (campo.value.trim() === "") {
+            alert("Preencha todas as pontuações antes de continuar.");
+            campo.focus();
+            return null;
+        }
+    }
+
+    // Converte os valores para números
+    const pontuacoes = ids.map(id =>
+        Number(document.getElementById(id).value)
+    );
 
     return pontuacoes;
 }
