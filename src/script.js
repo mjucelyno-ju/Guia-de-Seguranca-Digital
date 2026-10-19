@@ -125,6 +125,6 @@ function realizarAvaliacao() {
         classificacao;
 }
 
-// Botão para calcular:
+// Botão para calcular resultados:
 document.getElementById("btn-calcular")
     .addEventListener("click", realizarAvaliacao);
