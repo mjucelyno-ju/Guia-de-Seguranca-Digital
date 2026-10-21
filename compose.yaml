@@ -1,7 +1,11 @@
-services:
-  web:
-    image: nginx:alpine
-    ports:
-      - "8080:80"
-    volumes:
-      - ./src:/usr/share/nginx/html:ro
+  services:
+    tailwind:
+      build: .
+      volumes:
+        - ./src:/app/src
+    web:
+      image: nginx:alpine
+      ports:
+        - "8080:80"
+      volumes:
+        - ./src:/usr/share/nginx/html:ro
