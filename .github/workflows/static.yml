@@ -1,4 +1,3 @@
-# Workflow para compilar Tailwind CSS e publicar no GitHub Pages
 name: Deploy Tailwind site to Pages
 
 on:
@@ -25,30 +24,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 1. Configura o Node.js no servidor do GitHub
+   
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
 
-      # 2. Instala o Tailwind e outras dependências do seu projeto
       - name: Install dependencies
         run: npm install
 
-      # 3. Compila o Tailwind CSS (Gera o arquivo CSS final)
+      
       - name: Build Tailwind CSS
         run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # 4. Envia a pasta final para o GitHub Pages
+   
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # ATENÇÃO: Mude para './dist' ou '.' dependendo de onde seu index.html e CSS final são gerados
-          path: './dist' 
+        
+          path: './src'
 
       - name: Deploy to GitHub Pages
         id: deployment
