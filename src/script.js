@@ -7,7 +7,7 @@ function calcularTotal(pontuacoes) {
     for (const pontuacao of pontuacoes) {
         total += pontuacao;
     }
-    
+
     return total;
 }
 
