@@ -24,7 +24,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-   
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -34,7 +33,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      
+      # PASSO CORRIGIDO: Garante a permissão de execução antes do build do Tailwind
+      - name: Grant execute permissions to node_modules binaries
+        run: chmod -R +x ./node_modules/.bin
+
       - name: Build Tailwind CSS
         run: npm run build
 
@@ -44,7 +46,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-        
           path: './src'
 
       - name: Deploy to GitHub Pages
