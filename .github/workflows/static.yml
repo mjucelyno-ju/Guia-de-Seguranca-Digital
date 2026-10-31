@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # PASSO CORRIGIDO: Garante a permissão de execução antes do build do Tailwind
+
       - name: Grant execute permissions to node_modules binaries
         run: chmod -R +x ./node_modules/.bin
 
