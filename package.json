@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+ "scripts": {
     "dev": "concurrently \"tsc --watch --preserveWatchOutput\" \"tailwindcss -i ./src/input.css -o ./src/output.css --watch=always\"",
-    "build": "tsc && npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
-  },
+    "check": "tsc --noEmit",
+    "build": "npm run check && tsc && npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mjucelyno-ju/Guia-de-Seguranca-Digital.git"
