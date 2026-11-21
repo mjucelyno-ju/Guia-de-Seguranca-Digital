@@ -55,7 +55,7 @@ function contarPraticasSeguras(pontuacoes: number[]): number {
     let quantidadeSeguras = 0;
 
     for (const pontuacao of pontuacoes) {
-        if (pontuacao >= 7 && pontuacao <= 10) {
+        if (pontuacao >= LIMITE_SEGURO && pontuacao <= PONTOS_MAX) {
             quantidadeSeguras++;
         }
     }
@@ -65,7 +65,7 @@ function contarPraticasSeguras(pontuacoes: number[]): number {
 
 // Classifica o resultado:
 function classificarResultado(media: number): NivelProtecao {
-    if (media >= 7) return "forte";
+    if (media >= LIMITE_SEGURO) return "forte";
     if (media >= 4) return "intermediaria";
     return "basica";
 }
