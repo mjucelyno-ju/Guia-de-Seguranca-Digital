@@ -231,4 +231,3 @@ function iniciar(): void {
 }
 
 iniciar();
-
