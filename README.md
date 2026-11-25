@@ -11,6 +11,8 @@ A página ensina boas práticas de segurança digital e permite que a pessoa mar
 
 Repositório: <https://github.com/mjucelyno-ju/Guia-de-Seguranca-Digital>
 
+Site: https://mjucelyno-ju.github.io/Guia-de-Seguranca-Digital/
+
 ## Tema e público
 
 Guia educativo sobre segurança digital para quem está começando: proteção de contas, navegação segura, proteção dos dispositivos, cuidado com mensagens, backup e privacidade.
