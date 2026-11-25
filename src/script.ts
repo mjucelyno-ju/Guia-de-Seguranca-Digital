@@ -167,7 +167,7 @@ function atualizarIndicadores(): void {
     // Pontuação máxima possível: soma dos pontos de todas as práticas
     const maximo = calcularTotal(praticas.map(p => p.pontos));
 
-    // Mostra no console
+    // Mostra no console.
     console.log(`Projeto: ${nomeProjeto}`);
     console.log(`Total de pontos: ${total}`);
     console.log(`Média: ${media.toFixed(2)}`);
